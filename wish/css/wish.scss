@@ -1,0 +1,50 @@
+@mixin size($width,$height){
+	width: $width;
+	height: $height;
+}
+.wrap{width: 750px;margin: 0 auto;}
+.main{background-color: #FED1E8;padding-bottom: 20px;
+	.img1{position: relative; @include size(750px,70px); background: url(../images/01.jpg) center no-repeat;background-size: 100% 100%;
+		.birth{cursor:pointer;
+         &:hover{color:red;}
+		}
+        .text{position: absolute;top:10px;left: 68px;    font-size: 38px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 6px;}
+		.one{position: absolute;top:24px;right: 40px;}
+		.two{position: absolute;top:24px;right: 140px;}
+		.three{position: absolute;top:24px;right: 236px;}
+	}
+	.img2{@include size(750px,80px); background: url(../images/02.jpg) center no-repeat;background-size: 100% 100%;
+		.marquee{    width: 450px;
+    height: 70px;
+    text-align: center;    font-size: 14px;
+    color: #FF71B8;
+    line-height: 20px;}
+	}
+	.img3{@include size(750px,50px); background: url(../images/03.jpg) center no-repeat;background-size: 100% 100%;}
+	.img4{@include size(750px,90px); background: url(../images/04.jpg) center no-repeat;background-size: 100% 100%;}
+    
+    .cont{width: 670px;background-color: #fff;padding:10px 8px;border:4px solid #FF81AC;margin:0 auto;
+    	.bro{@include size(450px,553px);margin: 0 auto;background: url(../images/paul.jpeg) center no-repeat;background-size: 100% 100%;}
+    	.line{width: 620px;border:1px dashed #FEA8C1;border-top: none;margin: 20px auto;}
+    	.wish div{display: inline-block;}
+    	.wish .img{@include size(400px,300px);overflow: hidden;
+    		img{@include size(100%,100%);transition: all ease .5s;
+    			&:hover{transform:scale(1.1);}
+    		}
+    		}
+    		.wish .text{    font-size: 24px;
+    color: #FF8000;
+    font-weight: bold;
+    line-height: 40px;
+    /* margin: 20px 0 40px 20px; */
+    text-align: center;
+    vertical-align: top;
+    margin: 40px 0 0 10px;}
+    	.best-wish{text-align:center;font-size:24px;line-height:45px;color:#0080FF;font-weight:bold;
+    	}
+    	.wish-from{font-weight:bold;font-size:24px;color:red;text-align:right;}
+    }
+}
