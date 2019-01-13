@@ -27,7 +27,7 @@
 	.img4{@include size(750px,90px); background: url(../images/04.jpg) center no-repeat;background-size: 100% 100%;}
     
     .cont{width: 670px;background-color: #fff;padding:10px 8px;border:4px solid #FF81AC;margin:0 auto;
-    	.bro{@include size(450px,553px);margin: 0 auto;background: url(../images/paul.jpeg) center no-repeat;background-size: 100% 100%;}
+    	.bro{@include size(450px,553px);margin: 0 auto;background: url(../images/people.jpg) center no-repeat;background-size: 100% 100%;}
     	.line{width: 620px;border:1px dashed #FEA8C1;border-top: none;margin: 20px auto;}
     	.wish div{display: inline-block;}
     	.wish .img{@include size(400px,300px);overflow: hidden;
